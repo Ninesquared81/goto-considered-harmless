@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
                 ++dp;
             }
             else {
-                ip = data[dp];
+                ip += data[dp];
             }
             break;
         case '<': {
