@@ -66,8 +66,8 @@ int main(int argc, char **argv) {
             break;
         case '<': {
             int64_t current = data[dp];
-            data[dp] -= data[dp-1];
-            data[dp-1] += current;
+            data[dp] = data[dp-1];
+            data[dp-1] = current;
             --dp;
             break;
         }
